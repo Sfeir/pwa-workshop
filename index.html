@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>France 2018</title>
+  <link rel="stylesheet" href="bundle.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <header class="header">
+    <h1>France 2018</h1>
+  </header>
+
+  <div class="players"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

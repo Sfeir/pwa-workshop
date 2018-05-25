@@ -1,0 +1,164 @@
+{
+  "players": [{
+      "name": {
+        "first": "alphonse",
+        "last": "areola"
+      },
+      "club": "psg"
+    },
+    {
+      "name": {
+        "first": "hugo",
+        "last": "lloris"
+      },
+      "club": "tottenham"
+    },
+    {
+      "name": {
+        "first": "steve",
+        "last": "mandanda"
+      },
+      "club": "marseille"
+    },
+    {
+      "name": {
+        "first": "lucas",
+        "last": "hernandez"
+      },
+      "club": "atlético madrid"
+    },
+    {
+      "name": {
+        "first": "djibril",
+        "last": "sidibe"
+      },
+      "club": "monaco"
+    },
+    {
+      "name": {
+        "first": "benjamin",
+        "last": "pavard"
+      },
+      "club": "stuttgart"
+    },
+    {
+      "name": {
+        "first": "raphael",
+        "last": "varane"
+      },
+      "club": "real madrid"
+    },
+    {
+      "name": {
+        "first": "adil",
+        "last": "rami"
+      },
+      "club": "om"
+    },
+    {
+      "name": {
+        "first": "samuel",
+        "last": "umtiti"
+      },
+      "club": "fc barcelone"
+    },
+    {
+      "name": {
+        "first": "presnel",
+        "last": "kimpembe"
+      },
+      "club": "psg"
+    },
+    {
+      "name": {
+        "first": "benjamin",
+        "last": "mendy"
+      },
+      "club": "manchester city"
+    },
+    {
+      "name": {
+        "first": "paul",
+        "last": "pogba"
+      },
+      "club": "manchester united"
+    },
+    {
+      "name": {
+        "first": "ngolo",
+        "last": "kante"
+      },
+      "club": "chelsea"
+    },
+    {
+      "name": {
+        "first": "blaise",
+        "last": "matuidi"
+      },
+      "club": "juventus turin"
+    },
+    {
+      "name": {
+        "first": "corentin",
+        "last": "tolisso"
+      },
+      "club": "bayern munich"
+    },
+    {
+      "name": {
+        "first": "steven",
+        "last": "nzonzi"
+      },
+      "club": "séville"
+    },
+    {
+      "name": {
+        "first": "kylian",
+        "last": "mbappe"
+      },
+      "club": "psg"
+    },
+    {
+      "name": {
+        "first": "ousmane",
+        "last": "dembele"
+      },
+      "club": "fc barcelone"
+    },
+    {
+      "name": {
+        "first": "olivier",
+        "last": "giroud"
+      },
+      "club": "chelsea"
+    },
+    {
+      "name": {
+        "first": "antoine",
+        "last": "griezmann"
+      },
+      "club": "atlético de madrid"
+    },
+    {
+      "name": {
+        "first": "nabil",
+        "last": "fekir"
+      },
+      "club": "ol"
+    },
+    {
+      "name": {
+        "first": "thomas",
+        "last": "lemar"
+      },
+      "club": "manaco"
+    },
+    {
+      "name": {
+        "first": "florian",
+        "last": "thauvin"
+      },
+      "club": "om"
+    }
+  ]
+}

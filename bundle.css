@@ -1,0 +1,52 @@
+.header {
+  background: blue; }
+  .header h1 {
+    color: white;
+    margin: 0 0 0 1rem;
+    padding: 0;
+    line-height: 60px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', 'sans-serif'; }
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr); }
+  @media screen and (min-width: 430px) {
+    .players {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 860px) {
+    .players {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media screen and (min-width: 1320px) {
+    .players {
+      grid-template-columns: repeat(4, 1fr); } }
+  @media screen and (min-width: 1620px) {
+    .players {
+      grid-template-columns: repeat(5, 1fr); } }
+
+.player {
+  position: relative;
+  height: 350px;
+  background-position: center;
+  background-size: cover; }
+
+.player__img {
+  display: none; }
+
+.player__name {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding-top: 250px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Roboto', 'sans-serif'; }
