@@ -21,6 +21,8 @@
     "webpack-dev-server": "^2.4.3"
   },
   "dependencies": {
+    "@material/checkbox": "^0.35.0",
+    "@material/form-field": "^0.35.0",
     "local-web-server": "^2.5.2"
   }
 }
