@@ -4,161 +4,184 @@
         "first": "alphonse",
         "last": "areola"
       },
-      "club": "psg"
+      "club": "psg",
+      "position": "gk"
     },
     {
       "name": {
         "first": "hugo",
         "last": "lloris"
       },
-      "club": "tottenham"
+      "club": "tottenham",
+      "position": "gk"
     },
     {
       "name": {
         "first": "steve",
         "last": "mandanda"
       },
-      "club": "marseille"
+      "club": "marseille",
+      "position": "gk"
     },
     {
       "name": {
         "first": "lucas",
         "last": "hernandez"
       },
-      "club": "atlético madrid"
+      "club": "atlético madrid",
+      "position": "df"
     },
     {
       "name": {
         "first": "djibril",
         "last": "sidibe"
       },
-      "club": "monaco"
+      "club": "monaco",
+      "position": "df"
     },
     {
       "name": {
         "first": "benjamin",
         "last": "pavard"
       },
-      "club": "stuttgart"
+      "club": "stuttgart",
+      "position": "df"
     },
     {
       "name": {
         "first": "raphael",
         "last": "varane"
       },
-      "club": "real madrid"
+      "club": "real madrid",
+      "position": "df"
     },
     {
       "name": {
         "first": "adil",
         "last": "rami"
       },
-      "club": "om"
+      "club": "om",
+      "position": "df"
     },
     {
       "name": {
         "first": "samuel",
         "last": "umtiti"
       },
-      "club": "fc barcelone"
+      "club": "fc barcelone",
+      "position": "df"
     },
     {
       "name": {
         "first": "presnel",
         "last": "kimpembe"
       },
-      "club": "psg"
+      "club": "psg",
+      "position": "df"
     },
     {
       "name": {
         "first": "benjamin",
         "last": "mendy"
       },
-      "club": "manchester city"
+      "club": "manchester city",
+      "position": "df"
     },
     {
       "name": {
         "first": "paul",
         "last": "pogba"
       },
-      "club": "manchester united"
+      "club": "manchester united",
+      "position": "ml"
     },
     {
       "name": {
         "first": "ngolo",
         "last": "kante"
       },
-      "club": "chelsea"
+      "club": "chelsea",
+      "position": "ml"
     },
     {
       "name": {
         "first": "blaise",
         "last": "matuidi"
       },
-      "club": "juventus turin"
+      "club": "juventus turin",
+      "position": "ml"
     },
     {
       "name": {
         "first": "corentin",
         "last": "tolisso"
       },
-      "club": "bayern munich"
+      "club": "bayern munich",
+      "position": "ml"
     },
     {
       "name": {
         "first": "steven",
         "last": "nzonzi"
       },
-      "club": "séville"
+      "club": "séville",
+      "position": "ml"
     },
     {
       "name": {
         "first": "kylian",
         "last": "mbappe"
       },
-      "club": "psg"
+      "club": "psg",
+      "position": "fw"
     },
     {
       "name": {
         "first": "ousmane",
         "last": "dembele"
       },
-      "club": "fc barcelone"
+      "club": "fc barcelone",
+      "position": "fw"
     },
     {
       "name": {
         "first": "olivier",
         "last": "giroud"
       },
-      "club": "chelsea"
+      "club": "chelsea",
+      "position": "fw"
     },
     {
       "name": {
         "first": "antoine",
         "last": "griezmann"
       },
-      "club": "atlético de madrid"
+      "club": "atlético de madrid",
+      "position": "fw"
     },
     {
       "name": {
         "first": "nabil",
         "last": "fekir"
       },
-      "club": "ol"
+      "club": "ol",
+      "position": "fw"
     },
     {
       "name": {
         "first": "thomas",
         "last": "lemar"
       },
-      "club": "manaco"
+      "club": "manaco",
+      "position": "fw"
     },
     {
       "name": {
         "first": "florian",
         "last": "thauvin"
       },
-      "club": "om"
+      "club": "om",
+      "position": "fw"
     }
   ]
 }

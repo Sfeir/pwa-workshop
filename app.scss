@@ -1,5 +1,8 @@
+@import "@material/form-field/mdc-form-field";
+@import "@material/checkbox/mdc-checkbox";
 $blue: #304ffe;
 $darkblue: #0026ca;
+$red: red;
 body {
   margin: 0;
   font-family: 'Arial', 'sans-serif';
@@ -8,6 +11,8 @@ body {
 .header {
   background: $blue;
   border-top: 1rem solid $darkblue;
+  display: flex;
+  align-items: center;
   h1 {
     color: white;
     margin: 0 0 0 1rem;
@@ -17,6 +22,28 @@ body {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
+  form {
+    margin-left: 2rem;
+    color: white;
+  }
+  .mdc-form-field {
+    margin-left: 1rem;
+    label {
+      color: white;
+    }
+  }
+}
+
+.mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate)~.mdc-checkbox__background {
+  border-color: white;
+}
+
+.mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background,
+.mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background,
+.mdc-checkbox::before,
+.mdc-checkbox::after {
+  background-color: $red;
+  border-color: $red;
 }
 
 .players {

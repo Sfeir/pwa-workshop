@@ -1,34 +1,50 @@
+let PLAYERS = [];
+const WRAPPER = document.querySelector('.players');
+
 fetch('./players.json')
   .then(response => {
     return response.json()
   })
   .then(json => {
-    return json.players
+    PLAYERS = json.players
   })
   .then(players => {
-    players.map(makePlayer)
+    makePlayer(['gk', 'df', 'ml', 'fw']);
   });
 
-function makePlayer(player) {
-  const WRAPPER = document.querySelector('.players');
+function makePlayer(filters) {
 
-  let element = document.createElement('div');
-  element.classList.add('player');
-  element.style.backgroundImage = `url("assets/players/${player.name.first}-${player.name.last}.jpeg")`;
+  WRAPPER.innerHTML = '';
 
-  let name = document.createElement('span');
-  name.classList.add('player__name');
-  name.innerText = `${player.name.first[0]}.${player.name.last}`;
+  PLAYERS
+    .filter(player => {
+      return filters.indexOf(player.position) > -1
+    })
+    .map(player => {
+      let element = document.createElement('div');
+      element.classList.add('player');
+      element.style.backgroundImage = `url("assets/players/${player.name.first}-${player.name.last}.jpeg")`;
 
-  element.appendChild(name);
-  WRAPPER.appendChild(element);
+      let name = document.createElement('span');
+      name.classList.add('player__name');
+      name.innerText = `${player.name.first[0]}.${player.name.last}`;
+
+      element.appendChild(name);
+      WRAPPER.appendChild(element);
+    });
 }
 
+let form = document.querySelector('#filters');
+form.addEventListener('change', (e) => {
+  e.preventDefault();
 
-/**
- * 
- * <div class="player" style="background-image: url('http://www.sofoot.com/IMG/img-hugo-lloris-1465292442_x600_articles-223529.jpg')"
-      alt="Lloris" class="player__img">
-      <span class="player__name">Lloris</span>
-    </div>
- */
+  let inputs = document.forms[0].querySelectorAll('input');
+  let filters = [];
+  for (let input of inputs) {
+    if (input.checked) {
+      filters.push(input.name);
+    }
+  }
+
+  makePlayer(filters);
+});

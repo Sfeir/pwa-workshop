@@ -12,6 +12,57 @@
 <body>
   <header class="header">
     <h1>France 2018</h1>
+
+    <form id="filters">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox" checked="true" name="gk" class="mdc-checkbox__native-control" id="gk" />
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+              <path class="mdc-checkbox__checkmark-path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+            </svg>
+            <div class="mdc-checkbox__mixedmark"></div>
+          </div>
+        </div>
+        <label for="gk">Gardiens</label>
+      </div>
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox" checked="true" name="df" class="mdc-checkbox__native-control" id="df" />
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+              <path class="mdc-checkbox__checkmark-path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+            </svg>
+            <div class="mdc-checkbox__mixedmark"></div>
+          </div>
+        </div>
+        <label for="df">Défenseurs</label>
+      </div>
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox" checked="true" name="ml" class="mdc-checkbox__native-control" id="ml" />
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+              <path class="mdc-checkbox__checkmark-path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+            </svg>
+            <div class="mdc-checkbox__mixedmark"></div>
+          </div>
+        </div>
+        <label for="ml">Milieux</label>
+      </div>
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox" checked="true" name="fw" class="mdc-checkbox__native-control" id="fw" />
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+              <path class="mdc-checkbox__checkmark-path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+            </svg>
+            <div class="mdc-checkbox__mixedmark"></div>
+          </div>
+        </div>
+        <label for="fw">Attaquants</label>
+      </div>
+    </form>
   </header>
 
   <div class="players"></div>
