@@ -3,9 +3,11 @@
 $blue: #304ffe;
 $darkblue: #0026ca;
 $red: red;
+$lightgrey: #f8f8fa;
 body {
   margin: 0;
   font-family: 'Arial', 'sans-serif';
+  background: $lightgrey;
 }
 
 .header {
@@ -48,6 +50,8 @@ body {
 
 .players {
   display: grid;
+  grid-gap: 2rem;
+  margin: 2rem;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
   @media screen and (min-width: 430px) {
@@ -75,8 +79,15 @@ body {
 .player {
   position: relative;
   height: 350px;
+  background-color: transparent;
   background-position: center;
   background-size: cover;
+  border-radius: .8rem;
+  transition: all .3s;
+  &:hover,
+  &:focus {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.6);
+  }
 }
 
 .player__img {
@@ -92,7 +103,7 @@ body {
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(black, .3);
+  text-shadow: 5px 5px rgba(0, 0, 0, .2);
   text-align: center;
   padding-top: 265px;
   font-size: 2.4rem;
