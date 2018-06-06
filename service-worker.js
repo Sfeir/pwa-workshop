@@ -8,8 +8,8 @@ self.addEventListener('install', event => {
         'index.html',
         'bundle.css',
         'bundle.js',
-        'players.json',
         'manifest.json',
+        /*'players.json',
         'assets/players/alphonse-areola.jpeg',
         'assets/players/hugo-lloris.jpeg',
         'assets/players/steve-mandanda.jpeg',
@@ -32,7 +32,8 @@ self.addEventListener('install', event => {
         'assets/players/antoine-griezmann.jpeg',
         'assets/players/nabil-fekir.jpeg',
         'assets/players/thomas-lemar.jpeg',
-        'assets/players/florian-thauvin.jpeg',
+        'assets/players/florian-thauvin.jpeg',*/
+        'assets/players/footix.jpg',
       ])
     })
   );
@@ -42,10 +43,18 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(function (response) {
       return response || fetch(event.request);
     })
   );
 });
+
+
+// REPLACE EVERY IMAGES (.JPEG)
+/* self.addEventListener('fetch', event => {
+  if (event.request.url.endsWith('.jpeg')) {
+    event.respondWith(caches.match('assets/players/footix.jpg'));
+  }
+}); */

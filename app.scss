@@ -7,6 +7,9 @@ $lightgrey: #f8f8fa;
 body {
   margin: 0;
   font-family: 'Arial', 'sans-serif';
+  &.loading {
+    animation: loading 1s infinite;
+  }
 }
 
 .header {
@@ -116,4 +119,13 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@keyframes loading {
+  from {
+    background: $blue;
+  }
+  to {
+    background: white;
+  }
 }
