@@ -2,12 +2,21 @@
 
 ### Install app dependencies
 ```bash
-npm install
+npm install 
 ```
+or
+```bash
+yarn 
+```
+
 
 ### Start the app
 ```bash
 npm start
+```
+or
+```bash
+yarn start
 ```
 
 ### Open app
