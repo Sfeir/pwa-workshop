@@ -23,8 +23,8 @@ function makePlayer(filters) {
     .map(player => {
       let element = document.createElement('div');
       element.classList.add('player');
-      element.style.backgroundImage = `url("assets/players/${player.name.first}-${player.name.last}.jpeg")`;
-
+      // element.style.backgroundImage = `url("assets/players/${player.name.first}-${player.name.last}.jpeg")`;
+      element.innerHTML = `<img src="assets/players/${player.name.first}-${player.name.last}.jpeg">`;
       let name = document.createElement('span');
       name.classList.add('player__name');
       name.innerText = `${player.name.first[0]}.${player.name.last}`;
