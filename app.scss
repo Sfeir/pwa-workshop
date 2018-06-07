@@ -1,5 +1,6 @@
 @import "@material/form-field/mdc-form-field";
 @import "@material/checkbox/mdc-checkbox";
+@import "@material/button/mdc-button";
 $blue: #304ffe;
 $darkblue: #0026ca;
 $red: red;
@@ -35,6 +36,10 @@ body {
     label {
       color: white;
     }
+  }
+  .btn-add {
+    display: none;
+    margin-left: 1rem;
   }
 }
 
@@ -129,3 +134,4 @@ body {
     background: white;
   }
 }
+
