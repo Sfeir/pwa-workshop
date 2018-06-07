@@ -1,6 +1,10 @@
 self.addEventListener('install', event => {
   self.skipWaiting();
 
+  self.addEventListener('activate', event => {
+    self.clients.claim();
+  });
+
   event.waitUntil(
     caches.open('my-cache').then(cache => {
       cache.addAll([
@@ -39,10 +43,9 @@ self.addEventListener('install', event => {
   );
 });
 
-self.addEventListener('activate', event => {
-  self.clients.claim();
-});
+//////////// caching strategy //////////////////////
 
+// cache first
 self.addEventListener('fetch', function (event) {
   event.respondWith(
     caches.match(event.request).then(function (response) {
@@ -50,6 +53,30 @@ self.addEventListener('fetch', function (event) {
     })
   );
 });
+
+// network first
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     fetch(event.request).catch(function() {
+//       return caches.match(event.request);
+//     })
+//   );
+// });
+
+// Stale-While-Revalidate
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(
+//     caches.open('mysite-dynamic').then(function(cache) {
+//       return cache.match(event.request).then(function(response) {
+//         var fetchPromise = fetch(event.request).then(function(networkResponse) {
+//           cache.put(event.request, networkResponse.clone());
+//           return networkResponse;
+//         })
+//         return response || fetchPromise;
+//       })
+//     })
+//   );
+// });
 
 
 // REPLACE EVERY IMAGES (.JPEG)
